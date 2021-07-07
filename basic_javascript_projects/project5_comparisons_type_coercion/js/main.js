@@ -11,6 +11,8 @@ X = 10;
 Y = 10;
 C = 82;
 B = "82";
+document.write(X + B);
+document.write("<br>");
 document.write(value1 + value2);
 document.write("<br>");
 document.write(2E310);
