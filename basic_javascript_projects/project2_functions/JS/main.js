@@ -1,8 +1,8 @@
-function dafunction() {
-    var str = "heres variable";
-    var ing = "heres another varibale "
-    var result = str.fontcolor("red");
-    document.getElementById("Green_Text").innerHTML = ing + result;
+function dafunction() { // creating a function namned dafunction
+    var str = "heres variable"; // assigning values to variable
+    var ing = "heres another varibale " // assigning values to variable
+    var result = str.fontcolor("red"); //using fontcolor to establish the color
+    document.getElementById("Green_Text").innerHTML = ing + result; //using getelementbyid to display the variables 
 }
 
 function changeColor(newColor) {
