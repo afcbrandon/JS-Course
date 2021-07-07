@@ -11,6 +11,7 @@ X = 10;
 Y = 10;
 C = 82;
 B = "82";
+
 document.write(X + B);
 document.write("<br>");
 document.write(value1 + value2);
@@ -44,3 +45,7 @@ document.write("<br>");
 document.write(5 > 10 || 10 > 4); // true
 document.write("<br>");
 document.write(5 > 10 || 10 > 20); // false
+document.write("<br>");
+document.write("<br>");
+document.write("the data type for variable world is a: " );
+document.write(typeof "world");
