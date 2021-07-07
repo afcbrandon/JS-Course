@@ -1,8 +1,3 @@
-function para {
-    document.getElementById("para").innerHTML = 
-    typeof "john" + "<br>" + 
-    typeof 3.14 + "<br>" +
-    typeof true + "<br>" +
-    typeof false + "<br>" +
-    typeof x;
-}
+const value1 = 400;
+const value2 = 20;
+document.write(value1 + value2);
