@@ -7,5 +7,5 @@ function ASqaudDictionary() { //setting the function name to ASqaudDictionary
         whatwerebout: "getting paper and cool things."
     };
     delete squad.whatwerebout; // deleting the key whatwerebout
-    document.getElementById("Dictionary").innerHTML = squad.boss // returns the key of boss
+    document.getElementById("Dictionary").innerHTML = squad.whatwerebout // returns the key of boss
 }
