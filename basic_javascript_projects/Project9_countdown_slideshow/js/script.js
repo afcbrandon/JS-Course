@@ -5,7 +5,7 @@ function countdown() { // countdown funtion
       seconds = seconds - 1;
       timer.innerHTML = seconds;
       setTimeout(tick, 1000);
-  if(seconds == -1){
+  if(seconds == 0){
       alert("times up!");
   }
       }
