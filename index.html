@@ -2,24 +2,20 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <script  src="script.js"></script>
     </head>
+
     <body>
-        <p id="Counting_to_Ten"></p>
-        <button onclick="count_To_hundred()">Click here to count to 100</button>
-        <script>
-            A = "always ";
-            B = "remember: ";
-            document.write(A + B);
+        <h1 class="Click">This text will change</h1>
+        <h3 class="Click">This text will not change</h3>
+        <button onclick="Hello_World_Function()">Click me!</button><br>
+        <button onclick="Draw()">Click me!</button><br>
 
-            X = "you ";
-            Y = "are ";
-            document.write(X + Y);
-
-            M = "unique, " ;
-            N = "just like everyone else.";
-            document.write(M + N);
-
-        </script>
+        <canvas id="myCanvas" width="200" height="100" style="border:1px solid #d3d3d3;">
+            Your browser does not support the HTML canvas tag.</canvas>
     </body>
+    <script>
+        myfunction() {
+            return "this is my function";
+        }
+    </script>
 </html>
