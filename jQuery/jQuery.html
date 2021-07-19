@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>jQuery Example</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    </head>
+
+    <script>
+        $(document).ready(function(){
+            $('html').append(
+                "<body>\
+                    <div id='container'>\
+                        <div id='inner'>\
+                            <h1>Basic jQuery</h1>\
+                            <p id='one'>Paragraph 1</p>\
+                            <p id='two'>Paragraph 2</p>\
+                            <p id='three'>Paragraph 3</p>\
+                            <p id='showPara'>Click here to show the hidden paragraph</p>\
+                            <p id='hidden'>secret words my guy</p>\
+                        </div>\
+                    </div>\
+                </body>"
+            );
+            $('#two').css({'color':'red'});
+            $("#three").click(function(){
+                $('#one').hide();
+            });
+            
+            $( "p" ).on({// multiple events with diff handlers
+                "click": function() { console.log( "clicked!" ); },
+                "mouseover": function() { console.log( "hovered!" ); }
+            });
+            
+            $('#hidden').hide();//on load hide paragraph
+            
+            $('#showPara').click(function(){//show a hidden paragraph
+                $('#hidden').show();
+                $('#showPara').hide();
+            });
+        });
+    </script>
+
+</html>
