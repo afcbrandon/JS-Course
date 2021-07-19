@@ -7,7 +7,7 @@ const Calculator = { // creates an object to keep track of values
 	operator: null
 }
 
-function Input_Digit(digit) { // this modifies values each time a button is clicked
+function Input_Digit(digit) { //  modifies values each time a button is clicked
 	const { Display_Value, Wait_Second_Operand } = Calculator;
 	if (Wait_Second_Operand === true) {
 		Calculator.Display_Value = digit;
@@ -17,7 +17,7 @@ function Input_Digit(digit) { // this modifies values each time a button is clic
 	}
 }
 
-function Input_Decimal (dot) { // this section handles decimal points
+function Input_Decimal (dot) { //   handles decimal points
 	if (Calculator.Wait_Second_Operand === true) { return }
 	if (!Calculator.Display_Value. includes (dot) ) {
 		Calculator.Display_Value += dot;
@@ -25,7 +25,7 @@ function Input_Decimal (dot) { // this section handles decimal points
 }
 
 
-function Handle_Operator(Next_Operator) { //this section handles operators
+function Handle_Operator(Next_Operator) { //  handles operators
 	const { First_Operand, Display_Value, operator } = Calculator
 	const Value_of_Input = parseFloat(Display_Value);
 	
@@ -63,13 +63,13 @@ function Calculator_Reset () {
 	Calculator.operator = null;
 }
 
-function Update_Display() {//function updates the screen with the contents of Display_Value
+function Update_Display() {// updates the screen with the contents of Display_Value
 	const display = document.querySelector('.calculator-screen') ;
 	display . value = Calculator. Display_Value;
 }
 
 Update_Display() ;
-const keys = document.querySelector('.calculator-keys');  // section monitors button clicks
+const keys = document.querySelector('.calculator-keys');  //  monitors button clicks
 keys.addEventListener('click', (event) => {
 	const { target } = event;
 	if (!target.matches('button')) {
